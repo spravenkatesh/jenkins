@@ -2,12 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('dev') {
+        stage('dev-bash') {
             steps {
                 echo 'executing sum of 2 & 3'
                 sh 'chmod +x scripts/testing.sh'
                 sh './scripts/testing.sh' 
             }
-        }        
+        }
+        stage('dev-python')
+        echo 'executing python script'
+        sh 'python ./scripts/testing.py'        
     }
 }
