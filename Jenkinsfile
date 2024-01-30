@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'executing python script'
                 sh 'chmod +x scripts/testing.py'
-                sh '$(which python) scripts/testing.py'
+                sh '$(which python3) scripts/testing.py'
             }
         }        
     }
