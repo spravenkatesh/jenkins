@@ -12,7 +12,7 @@ pipeline {
         stage('dev-python') {
             steps {
                 echo 'executing python script'
-                sh 'python ./scripts/testing.py'
+                sh 'python /scripts/testing.py'
             }
         }        
     }
