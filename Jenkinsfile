@@ -9,8 +9,11 @@ pipeline {
                 sh './scripts/testing.sh' 
             }
         }
-        stage('dev-python')
-        echo 'executing python script'
-        sh 'python ./scripts/testing.py'        
+        stage('dev-python') {
+            steps {
+                echo 'executing python script'
+                sh 'python ./scripts/testing.py'
+            }
+        }        
     }
 }
