@@ -5,5 +5,5 @@ echo 'Hello World'
 function add {
     return 2 + 3
 }
-sum = add
+sum=add
 echo "sum is: $sum"
