@@ -1,5 +1,9 @@
 pipeline {
-    agent dockerContainer
+    agent {
+        docker {
+            image 'jenkins-agent:python3'
+        }
+    }
     stages {
         stage('Build') {
             steps {
