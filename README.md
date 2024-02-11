@@ -12,3 +12,4 @@
 * accept the standard SSH warning when first connecting to a new host via SSH by typing `yes`.
 * this will add remote git repository SSH public key in known_hosts file
 * verify under Jenkins job-configuration no error is seen at SCM block. 
+* if docker plugin is used for deploying agents, allow jenkins to deploy containers by accepting SSH connection `accept first-connection`, if known_hosts is not copied while building image.
