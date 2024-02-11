@@ -1,0 +1,17 @@
+pipeline {
+    agent none
+    stages {
+        stage('Hello World') {
+            agent any
+            steps {
+                echo 'Hello World!!'
+            }
+        }
+        stage('check python version') {
+            agent any
+            steps {
+                sh 'python3 --version'
+            }
+        }
+    }
+}
