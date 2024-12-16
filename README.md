@@ -7,7 +7,7 @@
 * login as `jenkins` user from host
 * execute below command
   ```
-  git ls-remote -h -- git@github.com:spravenkatesh/jenkins.git HEAD
+  git ls-remote -h -- git@github.com:<github-username>/jenkins.git HEAD
   ```
 * accept the standard SSH warning when first connecting to a new host via SSH by typing `yes`.
 * this will add remote git repository SSH public key in known_hosts file
