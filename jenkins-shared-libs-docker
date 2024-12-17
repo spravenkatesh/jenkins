@@ -5,6 +5,11 @@ pipeline {
         docker { image 'python:slim' }
     }
     stages {
+        stage("check python version") {
+            steps {
+                sh "python --version"
+            }
+        }
         stage("hello-world") {
             steps {
                 HelloWorld()
