@@ -8,7 +8,7 @@ pipeline {
                 HelloWorld()
             }
         }
-        stage("Hellow parameterized") {
+        stage("Hello parameterized") {
             steps {
                 HelloParameterized("XYZ", "Tuesday")
             }
