@@ -13,5 +13,10 @@ pipeline {
                 HelloParameterized("XYZ", "Tuesday")
             }
         }
+        stage("Hello Mapping") {
+            steps {
+                HelloMap(name:"ABC", day:"Tuesday")
+            }
+        }
     }
 }
