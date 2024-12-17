@@ -1,0 +1,12 @@
+@Library("shared-libs") _
+
+pipeline {
+    agent any
+    stages {
+        stage("hello-world") {
+            steps {
+                HelloWorld()
+            }
+        }
+    }
+}
