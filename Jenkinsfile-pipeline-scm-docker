@@ -17,6 +17,9 @@ pipeline {
         }
     }
     post('cleanup') {
-        cleanWs()
+        always {
+            echo 'cleaning-up workspace'
+            cleanWs()
+        }
     }
 }
