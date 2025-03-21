@@ -5,14 +5,15 @@ pipeline {
         }
     }
     stages {
-        stage('Build') {
-            steps {
-                echo 'building python'
-            }
-        }
-        stage('test') {
+        stage('check python version') {
             steps {
                 sh 'python --version'
+            }
+        }
+        stage('hello world') {
+            steps {
+                sh 'chmod +x scripts/testing.py'
+                sh 'scripts/testing.py'
             }
         }
     }
