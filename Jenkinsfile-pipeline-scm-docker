@@ -10,10 +10,10 @@ pipeline {
                 sh 'python --version'
             }
         }
-        stage('hello world') {
+        stage('adding 2 + 3') {
             steps {
                 sh 'chmod +x scripts/testing.py'
-                sh 'scripts/testing.py'
+                sh 'python scripts/testing.py'
             }
         }
     }
