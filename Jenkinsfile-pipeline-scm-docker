@@ -1,10 +1,16 @@
 pipeline {
-    agent any
+    agent {
+        docker {python:latest-slim}
+    }
     stages {
         stage('Build') {
             steps {
-                echo 'Hello World!!'
-                sh 'python3 --version'
+                echo 'building python'
+            }
+        }
+        stage('test') {
+            steps {
+                run 'python3 --version'
             }
         }
     }
