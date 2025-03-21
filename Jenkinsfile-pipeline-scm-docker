@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        docker {python:latest-slim}
+        docker {
+            image python:latest-slim
+        }
     }
     stages {
         stage('Build') {
@@ -10,7 +12,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                run 'python3 --version'
+                sh 'python3 --version'
             }
         }
     }
